@@ -2,11 +2,14 @@
 
 ###### JSOH format
   1. stationDictJson = "cityStationData.json" # 縣市，觀測站
-   - stationDictDcit = { 縣市 : { "stationNo": 主要編號, 
+    <pre><code>
+   stationDictDcit = { 縣市 : { "stationNo": 主要編號, 
                                "stationName" : 對應測站名字 double URL encode , 
                                  測站編號 : 測站名字 double URL encode, ...
                                 }, ...
                         }
+
+    </code></pre>
   2. earthquakeDataJSON = "earthquakeData.json" #地震資料
    - earthquakeDataDict = { 年分 : { 地震編號 :{ "date" : "%0.2d-%0.2d"#(month, day),
                                                "location" : 評估縣市, 
