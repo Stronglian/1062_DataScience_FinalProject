@@ -2,26 +2,23 @@
 
 ###### JSOH format
   1. stationDictJson = "cityStationData.json" # 縣市，觀測站
-    <pre><code>
-   stationDictDcit = { 縣市 : { "stationNo": 主要編號, 
+    <pre><code>stationDictDcit = { 縣市 : { "stationNo": 主要編號, 
                                "stationName" : 對應測站名字 double URL encode , 
                                  測站編號 : 測站名字 double URL encode, ...
                                 }, ...
-                        }
-
-    </code></pre>
+                        }</code></pre>
   2. earthquakeDataJSON = "earthquakeData.json" #地震資料
-   - earthquakeDataDict = { 年分 : { 地震編號 :{ "date" : "%0.2d-%0.2d"#(month, day),
+    <pre><code>earthquakeDataDict = { 年分 : { 地震編號 :{ "date" : "%0.2d-%0.2d"#(month, day),
                                                "location" : 評估縣市, 
                                                "strength" : 規模
                                                }, ...
                                    }, ...
-                           }
+                           }</code></pre>
   3. specificWeatherDataJSON = "SpecificWeatherData.json" # 特定天氣資料
-   - specificWeatherDataDcit = { "%d-%0.02d"%(year, month) : { 縣市 : { "%0.2d"%(day) : { weatherData }, ...
+    <pre><code>specificWeatherDataDcit = { "%d-%0.02d"%(year, month) : { 縣市 : { "%0.2d"%(day) : { weatherData }, ...
                                                                       }, ...
                                                              }, ...
-                               }
+                               }</code></pre>
 ###### 參考資料
  1. 地震中心
   - https://scweb.cwb.gov.tw/Page.aspx?ItemId=20&loc=tw&adv=1
