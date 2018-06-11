@@ -3,24 +3,24 @@
 
 ###### 參考資料
  1. 地震中心
-  + https://scweb.cwb.gov.tw/Page.aspx?ItemId=20&loc=tw&adv=1
+  - https://scweb.cwb.gov.tw/Page.aspx?ItemId=20&loc=tw&adv=1
  - 觀測資料查詢
-  + https://e-service.cwb.gov.tw/HistoryDataQuery/
+  - https://e-service.cwb.gov.tw/HistoryDataQuery/
  - JSON viewer
-  + http://jsonviewer.stack.hu/
+  - http://jsonviewer.stack.hu/
  - selenium button click
-  + https://pythonspot.com/selenium-click-button
+  - https://pythonspot.com/selenium-click-button
  - pyhton print flush。想弄單行輸出
-  +  http://www.revotu.com/python3-print-function-keyword-arguments.html
-  + http://www.revotu.com/how-to-flush-output-of-python-print.html
-  + https://stackoverflow.com/questions/5598181/python-multiple-prints-on-the-same-line
+  -  http://www.revotu.com/python3-print-function-keyword-arguments.html
+  - http://www.revotu.com/how-to-flush-output-of-python-print.html
+  - https://stackoverflow.com/questions/5598181/python-multiple-prints-on-the-same-line
  - python dict
-  + http://www.runoob.com/python/python-dictionary.html
+  - http://www.runoob.com/python/python-dictionary.html
  - What is the correct way to select an option using Selenium's Python WebDriver
-  + https://sqa.stackexchange.com/questions/1355/what-is-the-correct-way-to-select-an-option-using-seleniums-python-webdriver
+  - https://sqa.stackexchange.com/questions/1355/what-is-the-correct-way-to-select-an-option-using-seleniums-python-webdriver
  - beautifulsoup find_all
-  + https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
+  - https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
  - json dump save
-  + http://kuma-uni.blogspot.com/2012/06/jsonpythonjson.html
-  + https://docs.python.org/2/library/json.html
-  + https://stackoverflow.com/questions/7100125/storing-python-dictionaries
+  - http://kuma-uni.blogspot.com/2012/06/jsonpythonjson.html
+  - https://docs.python.org/2/library/json.html
+  - https://stackoverflow.com/questions/7100125/storing-python-dictionaries
