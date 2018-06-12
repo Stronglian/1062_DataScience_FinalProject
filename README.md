@@ -1,5 +1,17 @@
 # 1062_DataScience_FinalProject
 
+## 程式功能 in makeThemToPy
+ 
+### 00_makeStationJSON.py
+
+### 01_earthquakeCrawer.py
+
+### 02_weatherCrawer_01.py
+
+### 03_calculateDelta.py
+
+### 00_configuration_set.py (建構中)
+
 ###### JSON format
   1. stationDictJson = "cityStationData.json" # 縣市，觀測站
     <pre><code>stationDictDcit = { 縣市 : { 
@@ -24,6 +36,7 @@
                                                                       }, ...
                                                              }, ...
                                }</code></pre>
+
 ###### 參考資料
  1. 地震中心
   - https://scweb.cwb.gov.tw/Page.aspx?ItemId=20&loc=tw&adv=1
