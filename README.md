@@ -1,6 +1,6 @@
 # 1062_DataScience_FinalProject
 
-###### JSOH format
+###### JSON format
   1. stationDictJson = "cityStationData.json" # 縣市，觀測站
     <pre><code>stationDictDcit = { 縣市 : { 
                                 "stationNo": 主要編號, 
