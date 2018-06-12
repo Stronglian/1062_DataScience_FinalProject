@@ -3,14 +3,60 @@
 ## 程式功能 in makeThemToPy
  
 ### 00_makeStationJSON.py
+抓取所有觀測站列表，生成 cityStationData.json。
+並將預設第一個的設為預設觀測站。
+main: 直接將所有的觀測站與內容抓下來
 
 ### 01_earthquakeCrawer.py
+抓取地震中心資料，形成列表 earthquakeData.json。
+main: 抓取 2011 - 2017 每月地震資料(日期、中央縣市、規模)
 
 ### 02_weatherCrawer_01.py
+配合 cityStationData.json 依照 earthquakeData.json，去找對應日期與地點的天氣資料，進而生成 SpecificWeatherData.json。
+並在 earthquakeData.json 中每筆地震資料，追加前後三天的日期序列。
+main: 利用 earthquakeData.json 的資料跑。
+RunData(earthquakeDate, locationCity, stationDict): 
+GetCWBData(locationCity, station, stname, yearMon, dayList): 
 
 ### 03_calculateDelta.py
+抓前三天與後三天的指定資料各自平均數，進行比較，超過設定 gate 並算入符合。
+
 
 ### 00_configuration_set.py (建構中)
+設定所有會共同用到的參數。
+
+##### 變數名稱 - 預設內容
+##### - 檔案儲存位置
+JSONFileForder = "./"
+
+##### - 檔案儲存名稱
+stationDictJson = "cityStationData.json" # 縣市，觀測站
+earthquakeDataJSON = "earthquakeData.json" #地震資料
+specificWeatherDataJSON = "SpecificWeatherData.json" # 特定天氣資料
+
+##### - 觀測站
+codis_URL = "https://e-service.cwb.gov.tw/HistoryDataQuery/"
+
+##### - 地震資訊
+earthquarkeTable_URL = 'https://scweb.cwb.gov.tw/Page.aspx?ItemId=20&loc=tw&adv=1#'
+
+##### - webDriver 位置
+webDriverLoaction = 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe'
+
+##### - 偵測天數
+dayInterval = 3 #前後三天
+
+##### - 天氣資料設定
+needDataList = ["ObsTime", 'Temperature', 'RH', "Precp", "StnPres"] #指定參數
+gateDict = {"Precp_gate"       :10, #降水量 
+            "Temperature_gate" : 3, #溫度
+            "RH_gate"          : 5, #相對溼度
+            "StnPres_gate"     : 50, #氣壓
+                       }
+##### - - 資料判定
+persent_high = 0.8
+persent_low = 0.2
+overgateNum = 3
 
 ###### JSON format
   1. stationDictJson = "cityStationData.json" # 縣市，觀測站
